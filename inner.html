@@ -12,10 +12,14 @@
       <a class="header-logo-technomart" href="index.html">
         <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="108" height="18">
       </a>
-      <input class="header-search" type="text" value="Поиск:">
-      <a class="header-bookmarks">Закладки</a>
-      <a class="header-basket">Корзина</a>
-      <a class="header-order">Оформить заказ</a>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label aria-label="Поле поиска">
+          <input class="header-search" type="search" placeholder="Поиск:" >
+        </label>
+      </form>
+      <a href="#" class="header-bookmarks">Закладки</a>
+      <a href="#" class="header-basket">Корзина</a>
+      <a href="#" class="header-order">Оформить заказ</a>
     </div>
 
     <div class="header-left">
@@ -234,6 +238,20 @@
       </p>
     </div>
   </footer>
+
+  <!--PopUp Cart -->
+
+  <div class="popup-cart">
+    <div class="cart-info">
+      <button class="close-btn" type="button" aria-label="Закрыть"></button>
+      <p>Товар добавлен в корзину!</p>
+    </div>
+    <div class="btn-area">
+      <a href="#" class="order-btn">Оформить заказ</a>
+      <a href="#" class="continue-btn">Продолжить покупки</a>
+    </div>
+  </div>
+
 </body>
 
 </html>

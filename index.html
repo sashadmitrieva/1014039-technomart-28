@@ -9,13 +9,17 @@
 <body>
   <header class="page-header">
     <div class="header-top">
-      <a class="header-logo-technomart">
+      <a href="#" class="header-logo-technomart">
         <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="108" height="18">
       </a>
-      <input class="header-search" type="text" value="Поиск:">
-      <a class="header-bookmarks">Закладки</a>
-      <a class="header-basket">Корзина</a>
-      <a class="header-order">Оформить заказ</a>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label aria-label="Поле поиска">
+          <input class="header-search" type="search" placeholder="Поиск:" >
+        </label>
+      </form>
+      <a href="#" class="header-bookmarks">Закладки</a>
+      <a href="#" class="header-basket">Корзина</a>
+      <a href="#" class="header-order">Оформить заказ</a>
     </div>
 
     <div class="header-left">
@@ -223,9 +227,12 @@
     <section class="contacts">
       <h2 class="contacts-title">Контакты</h2>
       <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-      <img src="img/map.png" alt="Карта местонахождения офиса по адресу Большая Конюшенная, 19" width="300" height="158">
-      <a href="#" class="btn-feedback">Заблудились? Напишите нам!</a>
+      <a href="#show-map">
+        <img src="img/map.png" alt="Карта местонахождения офиса по адресу Большая Конюшенная, 19" width="300" height="158">
+      </a>
+      <a href="#write-us" class="btn-feedback">Заблудились? Напишите нам!</a>
     </section>
+
   </main>
 
   <footer class="page-footer">
@@ -297,6 +304,35 @@
       </p>
     </div>
   </footer>
+
+
+      <!--PopUp Write-Us -->
+
+      <div id="write-us" class="popup-write-us">
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="text-letter">Текст письма:</label><br>
+            <textarea id="text-letter" name="text-letter" rows="" cols="">В свободной форме</textarea>
+          </p>
+          <button type="submit">Оформить заказ</button>
+        </form>
+        <button type="button" class="close-btn" aria-label="Закрыть"></button>
+      </div>
+
+      <!-- PopUp Map-->
+
+      <div id="show-map" class="popup-map">
+        <img src="img/popup-map.png" width="943" height="449" alt="Карта местонахождения офиса по адресу Большая Конюшенная, 19">
+        <button class="close-btn" type="button" aria-label="Закрыть"></button>
+      </div>
 
 </body>
 
