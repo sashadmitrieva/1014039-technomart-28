@@ -88,8 +88,10 @@
       <form action="https://echo.htmlacademy.ru/courses" method="get" oninput="priceoutput.value=maxpriceinput.value">
         <fieldset>
           <legend>Цена:</legend>
-          <label for="max-price-range"></label>
-          <input type="range" id="max-price-range" name="maxpriceinput" min="0" max="30000" step="1000"><br>
+          <div class="range-area">
+            <label for="max-price-range"></label>
+            <input type="range" id="max-price-range" name="maxpriceinput" min="0" max="30000" step="1000"><br>
+          </div>
           <input type="text" name="min-price" aria-label="Минимальная цена" value="0">
           <span>&ndash;</span>
           <output name="priceoutput" aria-label="Максимальная цена">30000</output>
