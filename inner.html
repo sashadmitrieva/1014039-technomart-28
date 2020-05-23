@@ -14,7 +14,7 @@
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <label aria-label="Поле поиска">
-          <input class="header-search" type="search" placeholder="Поиск:" >
+          <input class="header-search" type="search" placeholder="Поиск:">
         </label>
       </form>
       <a href="#" class="header-bookmarks">Закладки</a>
@@ -85,10 +85,55 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
       <p>Фильтр:</p>
-      <form action="#" method="get">
-        <!--Форма фильтра -->
+      <form action="https://echo.htmlacademy.ru/courses" method="get" oninput="priceoutput.value=maxpriceinput.value">
+        <fieldset>
+          <legend>Цена:</legend>
+          <label for="max-price-range"></label>
+          <input type="range" id="max-price-range" name="maxpriceinput" min="0" max="30000" step="1000"><br>
+          <input type="text" name="min-price" aria-label="Минимальная цена" value="0">
+          <span>&ndash;</span>
+          <output name="priceoutput" aria-label="Максимальная цена">30000</output>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="bosch" id="filter-brand-bosch" checked>
+              <label for="filter-brand-bosch">Bosch</label>
+            </li>
+            <li>
+              <input type="checkbox" name="interskol" id="filter-brand-interskol">
+              <label for="filter-brand-interskol">Интерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="filter-brand-makita" checked>
+              <label for="filter-brand-makita">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="filter-brand-dewalt">
+              <label for="filter-brand-dewalt">Dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="filter-brand-hitachi">
+              <label for="filter-brand-hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="group-power" value="battery" id="filter-battery" checked>
+              <label for="filter-battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="group-power" value="network" id="filter-network">
+              <label for="filter-network">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
       </form>
-      <button type="submit" value="Submit">Показать</button>
     </section>
 
     <section class="catalog">
