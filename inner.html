@@ -4,12 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт.Каталог </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <div class="header-top">
-      <a class="header-logo-technomart" href="index.html">
+      <a class="header-logo" href="index.html">
         <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="108" height="18">
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -17,9 +21,9 @@
           <input class="header-search" type="search" placeholder="Поиск:">
         </label>
       </form>
-      <a href="#" class="header-bookmarks">Закладки</a>
-      <a href="#" class="header-basket">Корзина</a>
-      <a href="#" class="header-order">Оформить заказ</a>
+      <a href="#" class="header-bookmarks">Закладки: <span>0</span></a>
+      <a href="#" class="header-basket">Корзина: <span>0</span></a>
+      <a href="#" class="header-order-btn">Оформить заказ</a>
     </div>
 
     <div class="header-left">
@@ -27,7 +31,7 @@
     </div>
 
     <div class="header-info">
-      <a href="" class="header-info-phone">+7 (812) 555-05-55</a>
+      <a href="tel:78125550555" class="header-info-phone">+7 (812) 555-05-55</a>
       <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
 
@@ -36,13 +40,13 @@
         <img class="userpic" src="img/icon-user.svg" alt="Равшан Джамшутович" width="20" height="18">
         <span>Равшан Джамшутович</span>
       </a>
-      <a href="">Выйти</a>
+      <a class="btn-sign-out" href="#">Выйти</a>
       <ul class="header-user">
         <li class="header-user-order">
-          <a href="">Мои заказы</a>
+          <a href="#">Мои заказы</a>
         </li>
         <li class="header-user-authorization">
-          <a href="">Личный кабинет</a>
+          <a href="#">Личный кабинет</a>
         </li>
       </ul>
     </div>
@@ -75,12 +79,12 @@
   </header>
 
   <main>
-    <ul>
+    <ul class="breadcrumbs">
       <li><a href="">Каталог</a></li>
       <li><a href="">Инструмент</a></li>
-      <li><a href="">Перфораторы</a></li>
+      <li><a href="" class="breadcrumbs-current">Перфораторы</a></li>
     </ul>
-    <h1>Перфораторы</h1>
+    <h1 class="section-title">Перфораторы</h1>
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
@@ -140,7 +144,7 @@
 
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
-      <p>Сортировка:</p>
+      <p class="sort">Сортировка:</p>
       <ul class="sorted">
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
@@ -150,63 +154,63 @@
       <ul class="catalog-list">
         <li class="catalog-list-item">
           <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p>30500 Р.</p>
-          <a href="">25500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+          <span class="catalog-old-price">30500 Р.</span>
+          <span class="catalog-new-price">25500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p>30500 Р.</p>
-          <a href="">25500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+          <span class="catalog-old-price">30500 Р.</span>
+          <span class="catalog-new-price">25500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p>30500 Р.</p>
-          <a href="">25500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+          <span class="catalog-old-price">30500 Р.</span>
+          <span class="catalog-new-price">25500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 3000</h3>
-          <p>22500 Р.</p>
-          <a href="">15500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+          <span class="catalog-old-price">22500 Р.</span>
+          <span class="catalog-new-price">15500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p>30500 Р.</p>
-          <a href="">25500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+          <span class="catalog-old-price">30500 Р.</span>
+          <span class="catalog-new-price">25500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 2000</h3>
-          <a href="">12500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+          <span class="catalog-new-price">12500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 3000</h3>
-          <p>22500 Р.</p>
-          <a href="">15500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+          <span class="catalog-old-price">22500 Р.</span>
+          <span class="catalog-new-price">15500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p>30500 Р.</p>
-          <a href="">25500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+          <span class="catalog-old-price">30500 Р.</span>
+          <span class="catalog-new-price">25500 Р.</span>
         </li>
         <li class="catalog-list-item">
           <img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="144" height="128">
-          <h3>Перфоратор BOSCH BFG 2000</h3>
-          <a href="">12500 Р.</a>
+          <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+          <span class="catalog-new-price">12500 Р.</span>
         </li>
       </ul>
-      <ul class="paginator">
-        <li><a class="btn" href="#1">1</a></li>
-        <li><a class="btn" href="#2">2</a></li>
-        <li><a class="btn" href="#3">3</a></li>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a href="#1">1</a></li>
+        <li class="pagination-item"><a href="#2">2</a></li>
+        <li class="pagination-item"><a href="#3">3</a></li>
       </ul>
-      <a class="btn" href="#next">Следующая</a>
+      <a class="next-page-btn" href="#next">Следующая</a>
     </section>
 
     <section class="about-perforators">
@@ -216,49 +220,50 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer>
+    <div class="footer-top">
+      <div class="page-footer-logo">
+        <a class="footer-logo">
+          <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="138" height="23">
+        </a>
+      </div>
 
-    <div class="footer-logo">
-      <a class="footer-logo-technomart" href="index.html">
-        <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="138" height="23">
-      </a>
-    </div>
+      <div class="footer-contacts">
+        <p class="footer-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:7812550555">+7 (812) 555-05-55</a>
+      </div>
 
-    <div class="footer-contacts">
-      <p class="footer-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        +7 (812) 555-05-55</p>
-    </div>
-
-    <div class="footer-nav">
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item">
-          <a href="#">Компания</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Новости</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Каталог</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Доставка</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Контакты</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Материалы</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Техника</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Инструмент</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Спецпредложения</a>
-        </li>
-      </ul>
+      <div class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="#">Компания</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="inner.html">Каталог</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Материалы</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Техника</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Инструмент</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="footer-social">

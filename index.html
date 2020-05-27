@@ -3,23 +3,27 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Техномарт</title>
 </head>
 
 <body>
   <header class="page-header">
     <div class="header-top">
-      <a href="#" class="header-logo-technomart">
+      <a class="header-logo">
         <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="108" height="18">
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <label aria-label="Поле поиска">
-          <input class="header-search" type="search" placeholder="Поиск:" >
+          <input class="header-search" type="search" placeholder="Поиск:">
         </label>
       </form>
-      <a href="#" class="header-bookmarks">Закладки</a>
-      <a href="#" class="header-basket">Корзина</a>
-      <a href="#" class="header-order">Оформить заказ</a>
+      <a href="#" class="header-bookmarks">Закладки: <span>0</span></a>
+      <a href="#" class="header-basket">Корзина: <span>0</span></a>
+      <a href="#" class="header-order-btn">Оформить заказ</a>
     </div>
 
     <div class="header-left">
@@ -91,7 +95,7 @@
         <li class="promo-list-item">
           <h3 class="promo-list-item-title">Перфораторы</h3>
           <p class="promo-list-item-descr">Настоящие мужские игрушки</p>
-          <a href="inner.html" class="btn promo-list-item-btn">Открыть каталог</a>
+          <a href="inner.html" class="btn main-btn">Открыть каталог</a>
         </li>
         <li class="promo-list-item">
           <h3 class="promo-list-item-title">Скидки 50%</h3>
@@ -110,39 +114,39 @@
 
     <section class="popular">
       <header class="popular-header">
-        <h2 class="popular-title">Популярные товары</h2>
-        <a class="btn" href="#">Все популярные товары</a>
+        <h2 class="section-title popular-title">Популярные товары</h2>
+        <a class="btn main-btn" href="#">Все популярные товары</a>
       </header>
       <ul class="popular-list">
         <li class="popular-item">
-          <article class="popular-item">
+          <article>
             <img src="img/bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
-            <h3 class="popular-name">Перфоратор BOSCH BFG 9000</h3>
-            <p class="popular-old-price">32500 Р.</p>
-            <a class="btn popular-new-price-btn" href="#">25500 Р.</a>
+            <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
+            <span class="catalog-old-price">32500 Р.</span>
+            <span class="catalog-new-price">25500 Р.</span>
           </article>
         </li>
         <li class="popular-item">
-          <article class="popular-item">
+          <article>
             <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
-            <h3 class="popular-name">Перфоратор BOSCH BFG 3000</h3>
-            <p class="popular-old-price">22500 Р.</p>
-            <a class="btn popular-new-price-btn" href="#">15500 Р.</a>
+            <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+            <span class="catalog-old-price">22500 Р.</span>
+            <span class="catalog-new-price">15500 Р.</span>
           </article>
         </li>
         <li class="popular-item">
-          <article class="popular-item">
+          <article>
             <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="127" height="112">
-            <h3 class="popular-name">Перфоратор BOSCH BFG 6000</h3>
-            <p class="popular-old-price">30500 Р.</p>
-            <a class="btn popular-new-price-btn" href="#">25500 Р.</a>
+            <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+            <span class="catalog-old-price">30500 Р.</span>
+            <span class="catalog-new-price">25500 Р.</span>
           </article>
         </li>
         <li class="popular-item">
-          <article class="popular-item">
+          <article>
             <img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
-            <h3 class="popular-name">Перфоратор BOSCH BFG 2000</h3>
-            <a class="btn popular-new-price-btn" href="#">12500 Р.</a>
+            <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+            <span class="catalog-new-price">12500 Р.</span>
           </article>
         </li>
       </ul>
@@ -150,8 +154,8 @@
 
     <section class="brands">
       <header class="brands-header">
-        <h2 class="brands-title">Популярные производители</h2>
-        <a class="btn" href="#">Все производители</a>
+        <h2 class="section-title brands-title">Популярные производители</h2>
+        <a class="btn main-btn" href="#">Все производители</a>
       </header>
       <ul class="brands-list">
         <li class="brands-item">
@@ -198,7 +202,7 @@
     </section>
 
     <section class="services">
-      <h2 class="services-title">Сервисы</h2>
+      <h2 class="section-title services-title">Сервисы</h2>
       <p class="services-descr">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <ul class="services-list">
         <li class="services-item">Доставка</li>
@@ -212,7 +216,7 @@
     </section>
 
     <section class="about-company">
-      <h2 class="about-company-title">Компания «Техномарт»</h2>
+      <h2 class="section-title about-company-title">Компания «Техномарт»</h2>
       <p class="about-company-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
       <p class="about-company-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
@@ -221,63 +225,64 @@
         <li class="about-company-item">Автотрейдинг</li>
         <li class="about-company-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a class="btn" href="">Подробнее о компании</a>
+      <a class="btn main-btn" href="#">Подробнее о компании</a>
     </section>
 
     <section class="contacts">
-      <h2 class="contacts-title">Контакты</h2>
+      <h2 class="section-title contacts-title">Контакты</h2>
       <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
       <a href="#show-map">
         <img src="img/map.png" alt="Карта местонахождения офиса по адресу Большая Конюшенная, 19" width="300" height="158">
       </a>
-      <a href="#write-us" class="btn-feedback">Заблудились? Напишите нам!</a>
+      <a href="#write-us" class="btn main-btn">Заблудились? Напишите нам!</a>
     </section>
 
   </main>
 
-  <footer class="page-footer">
+  <footer>
+    <div class="footer-top">
+      <div class="page-footer-logo">
+        <a class="footer-logo">
+          <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="138" height="23">
+        </a>
+      </div>
 
-    <div class="footer-logo">
-      <a class="footer-logo-technomart">
-        <img src="img/logo-technomart.svg" alt="Логотип сайта интернет-магазина строительных материалов «Техномарт»" width="138" height="23">
-      </a>
-    </div>
+      <div class="footer-contacts">
+        <p class="footer-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:7812550555">+7 (812) 555-05-55</a>
+      </div>
 
-    <div class="footer-contacts">
-      <p class="footer-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a href="tel:7812550555">+7 (812) 555-05-55</a>
-    </div>
-
-    <div class="footer-nav">
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item">
-          <a href="#">Компания</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Новости</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="inner.html">Каталог</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Доставка</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Контакты</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Материалы</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Техника</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Инструмент</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#">Спецпредложения</a>
-        </li>
-      </ul>
+      <div class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="#">Компания</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="inner.html">Каталог</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Материалы</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Техника</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Инструмент</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="footer-social">
@@ -285,13 +290,13 @@
         Все права защищены</p>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a href="#">Вконтакте</a>
+          <a class="social-btn btn-vk" href="#">Вконтакте</a>
         </li>
         <li class="footer-social-item">
-          <a href="#">Фейсбук</a>
+          <a class="social-btn btn-fb" href="#">Фейсбук</a>
         </li>
         <li class="footer-social-item">
-          <a href="#">Инстаграм</a>
+          <a class="social-btn btn-inst" href="#">Инстаграм</a>
         </li>
       </ul>
       <p class="footer-feedback">
@@ -306,33 +311,33 @@
   </footer>
 
 
-      <!--PopUp Write-Us -->
+  <!--PopUp Write-Us -->
 
-      <div id="write-us" class="popup-write-us">
-        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="email">Ваш e-mail:</label>
-            <input id="email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="text-letter">Текст письма:</label><br>
-            <textarea id="text-letter" name="text-letter" rows="" cols="">В свободной форме</textarea>
-          </p>
-          <button type="submit">Оформить заказ</button>
-        </form>
-        <button type="button" class="close-btn" aria-label="Закрыть"></button>
-      </div>
+  <div id="write-us" class="popup-write-us">
+    <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="text-letter">Текст письма:</label><br>
+        <textarea id="text-letter" name="text-letter" rows="" cols="">В свободной форме</textarea>
+      </p>
+      <button type="submit">Оформить заказ</button>
+    </form>
+    <button type="button" class="close-btn" aria-label="Закрыть"></button>
+  </div>
 
-      <!-- PopUp Map-->
+  <!-- PopUp Map-->
 
-      <div id="show-map" class="popup-map">
-        <img src="img/popup-map.png" width="943" height="449" alt="Карта местонахождения офиса по адресу Большая Конюшенная, 19">
-        <button class="close-btn" type="button" aria-label="Закрыть"></button>
-      </div>
+  <div id="show-map" class="popup-map">
+    <img src="img/popup-map.png" width="943" height="449" alt="Карта местонахождения офиса по адресу Большая Конюшенная, 19">
+    <button class="close-btn" type="button" aria-label="Закрыть"></button>
+  </div>
 
 </body>
 
