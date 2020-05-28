@@ -71,7 +71,7 @@
   --basic-background: #f1f5f7;
   --basic-otherbackground: #f9f5f0;
   --basic-white: #ffffff;
-  --special-yellow: #ffbf47;
+  --special-yellow: #ffc047;
   --special-blue: #3bbce3;
   --special-darkblue: #161d29;
   --special-lilac: #dc91d8;
@@ -117,6 +117,9 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
 }
 
 /* Buttons */
@@ -291,6 +294,63 @@ img {
   background-color: var(--background-blue);
 }
 
+/* Promo */
+.promo-list {
+  list-style: none;
+}
+
+.promo-list-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.promo-list-item-descr {
+  color: var(--basic-white);
+}
+
+.promo-list-item:nth-child(1) {
+  background-color: var(--warning);
+}
+
+.promo-list-item:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.promo-list-item:nth-child(3) {
+  background-color: var(--special-lilac);
+}
+
+.promo-list-item:nth-child(4) {
+  width: 620px;
+  height: 266px;
+  background-color: var(--basic-blue);
+  background-image: url(../img/promo-perforators.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo-list-item:nth-child(5) {
+  background-color: var(--special-greenlight);
+}
+
+.promo-list-item:nth-child(6) {
+  background-color: var(--special-yellow);
+}
+
+.promo-list-item-btn {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.promo-list-item-btn:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.promo-list-item-btn:active {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
 /* Breadcrumbs */
 .breadcrumbs {
   list-style: none;
@@ -309,6 +369,43 @@ img {
 }
 
 /* Filters */
+.filters {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.checkbox-area,
+.radio-area {
+  list-style: none;
+}
+
+.filters p {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+form legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.checkbox-area-item,
+.radio-area-item {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: 1px solid var(--special-grey-border);
+}
+
 /* Sorted */
 .sort,
 .sorted {
@@ -377,6 +474,48 @@ img {
   background-color: var(--basic-red);
 }
 
+/* Brands */
+.brands-list {
+  list-style: none;
+}
+
+.brands-item {
+  background-color: var(--basic-white);
+  border: 1px solid var(--special-greylight);
+}
+
+.brands-item:hover {
+  box-shadow: 0 0 5px 3px var(--special-grey-border);
+}
+
+.brands-item:active {
+  opacity: 0.5;
+  box-shadow: 0 0 5px 3px var(--special-grey-border);
+}
+
+/* Services */
+.services-descr {
+  font-size: 13px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.services-item:hover {
+  background-color: var(--basic-darkblue);
+}
+
+.services-item:active {
+  background-color: var(--basic-white);
+  color: var(--basic-blue);
+}
+
 /* Pagination */
 .pagination-list {
   list-style: none;
@@ -402,6 +541,12 @@ img {
 .pagination-item-current a {
   color: var(--basic-white);
   background-color: var(--basic-red);
+}
+
+/* About-perforators */
+.about-perforators-descr {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 /* About company */
