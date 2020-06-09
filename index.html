@@ -100,7 +100,7 @@
       <div class="container">
         <h2 class="visually-hidden">Промо</h2>
         <ul class="promo-list">
-          <li class="promo-list-item">
+          <li class="promo-list-item new-item">
             <h3 class="promo-list-item-title">Материалы</h3>
             <a href="" class="btn promo-list-item-btn" aria-label="Выбрать материалы"><span>На любой вкус</span></a>
           </li>
@@ -113,9 +113,26 @@
             <a href="" class="btn promo-list-item-btn" aria-label="Выбрать технику">Для стройки</a>
           </li>
           <li class="promo-list-item">
-            <h3 class="promo-list-item-title">Перфораторы</h3>
-            <p class="promo-list-item-descr">Настоящие мужские игрушки</p>
-            <a href="inner.html" class="btn main-btn" aria-label="Выбрать перфоратор">Открыть каталог</a>
+            <ul class="promo-slider-list">
+              <li class="promo-slider-item promo-slider-current">
+                <h3 class="promo-list-item-title promo-main-title">Перфораторы</h3>
+                <p class="promo-list-item-descr">Настоящие мужские игрушки</p>
+                <a href="inner.html" class="btn main-btn promo-btn-catalog" aria-label="Выбрать перфоратор">Открыть каталог</a>
+              </li>
+              <li class="promo-slider-item promo-slider">
+                <h3 class="promo-list-item-title promo-main-title">Дрели</h3>
+                <p class="promo-list-item-descr">Соседям на радость!</p>
+                <a href="inner.html" class="btn main-btn promo-btn-catalog" aria-label="Выбрать дрель">Открыть каталог</a>
+              </li>
+              <div class="slider-control">
+                <a class="slider-control-prev" href="#" role="button"></a>
+                <a class="slider-control-next" href="#" role="button"></a>
+              </div>
+              <div class="slider-toggle">
+
+              </div>
+            </ul>
+
           </li>
           <li class="promo-list-item">
             <h3 class="promo-list-item-title">Скидки 50%</h3>
@@ -126,10 +143,7 @@
             <a href="" class="btn promo-list-item-btn" aria-label="Посмотреть условия доставки">Бесплатно</a>
           </li>
         </ul>
-        <!-- Кнопки прокрутки промо
-      <a class="prev-btn" htef="#"></a>
-      <a class="next-btn" href="#"></a>
-      -->
+
       </div>
     </section>
 
@@ -137,12 +151,16 @@
       <div class="container">
         <header class="popular-header">
           <h2 class="section-title popular-title">Популярные товары</h2>
-          <a class="btn main-btn" href="#">Все популярные товары</a>
+          <a class="btn main-btn popular-btn-items" href="#">Все популярные товары</a>
         </header>
         <ul class="popular-list">
           <li class="popular-list-item">
             <div class="item-img">
               <img src="img/bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
+            </div>
+            <div class="catalog-item-hover">
+              <a class="btn catalog-item-btn-buy" href="">Купить</a>
+              <button class="btn btn-add-bookmark" type="button">В закладки</button>
             </div>
             <div class="catalog-list-item-info">
               <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
@@ -150,9 +168,13 @@
               <span class="catalog-new-price">25500 Р.</span>
             </div>
           </li>
-          <li class="popular-list-item">
+          <li class="popular-list-item  new-item">
             <div class="item-img">
               <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+            </div>
+            <div class="catalog-item-hover">
+              <a class="btn catalog-item-btn-buy" href="">Купить</a>
+              <button class="btn btn-add-bookmark" type="button">В закладки</button>
             </div>
             <div class="catalog-list-item-info">
               <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
@@ -164,15 +186,23 @@
             <div class="item-img">
               <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="127" height="112">
             </div>
+            <div class="catalog-item-hover">
+              <a class="btn catalog-item-btn-buy" href="">Купить</a>
+              <button class="btn btn-add-bookmark" type="button">В закладки</button>
+            </div>
             <div class="catalog-list-item-info">
               <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
               <span class="catalog-old-price">30500 Р.</span>
               <span class="catalog-new-price">25500 Р.</span>
             </div>
           </li>
-          <li class="popular-list-item">
+          <li class="popular-list-item new-item">
             <div class="item-img">
               <img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+            </div>
+            <div class="catalog-item-hover">
+              <a class="btn catalog-item-btn-buy" href="">Купить</a>
+              <button class="btn btn-add-bookmark" type="button">В закладки</button>
             </div>
             <div class="catalog-list-item-info">
               <h3 class="popular-name"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
@@ -187,7 +217,7 @@
       <div class="container">
         <header class="brands-header">
           <h2 class="section-title brands-title">Популярные производители</h2>
-          <a class="btn main-btn" href="#">Все производители</a>
+          <a class="btn main-btn brands-btn" href="#">Все производители</a>
         </header>
         <ul class="brands-list">
           <li class="brands-item">
@@ -238,27 +268,30 @@
       <div class="container">
         <h2 class="section-title services-title">Сервисы</h2>
         <p class="services-descr">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-list">
-          <li class="services-item">Доставка</li>
-          <li class="services-item">Гарантия</li>
-          <li class="services-item">Кредит</li>
-        </ul>
-        <ul class="services-submenu">
-          <li class="visually-hidden delivery-unit">
-            <h3 class="delivery-unit-title">Доставка</h3>
-            <p class="delivery-unit-descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </li>
-          <li class="visually-hidden guarantee-unit">
-            <h3 class="guarantee-unit-title">Гарантия</h3>
-            <p class="guarantee-unit-descr">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
-              восстановите как-нибудь сами.</p>
-          </li>
-          <li class="visually-hidden credit-unit">
-            <h3 class="credit-unit-title">Кредит</h3>
-            <p class="credit-unit-descr">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a class="btn credit-btn" href="#" aria-label="Отправить заявку на кредит">Отправить заявку</a>
-          </li>
-        </ul>
+        <div class="services-content">
+          <ul class="services-list">
+            <li class="services-item" tabindex="1">Доставка</li>
+            <li class="services-item" tabindex="1">Гарантия</li>
+            <li class="services-item" tabindex="1">Кредит</li>
+          </ul>
+          <ul class="services-submenu">
+            <li class="services-submenu-item delivery-unit services-submenu-off">
+              <h3 class="services-submenu-title delivery-unit-title">Доставка</h3>
+              <p class="services-submenu-descr delivery-unit-descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </li>
+            <li class="services-submenu-item guarantee-unit services-submenu-on">
+              <h3 class="services-submenu-title guarantee-unit-title">Гарантия</h3>
+              <p class="services-submenu-descr guarantee-unit-descr">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                товар на новый. Дом уж
+                восстановите как-нибудь сами.</p>
+            </li>
+            <li class="services-submenu-item credit-unit services-submenu-off">
+              <h3 class="services-submenu-title credit-unit-title">Кредит</h3>
+              <p class="services-submenu-descr credit-unit-descr">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+              <a class="btn main-btn credit-btn" href="#" aria-label="Отправить заявку на кредит">Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -408,10 +441,10 @@
   <div id="show-map" class="popup popup-map">
     <img src="img/popup-map.png" width="943" height="449" alt="Карта местонахождения офиса по адресу Большая Конюшенная, 19">
     <button class="popup-close-btn" type="button" aria-label="Закрыть"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
-        fill="#ee3643" />
-    </svg></button>
+        <path
+          d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
+          fill="#ee3643" />
+      </svg></button>
   </div>
 
 </body>
