@@ -115,8 +115,10 @@
           <li class="promo-list-item">
             <ul class="promo-slider-list">
               <li class="promo-slider-item promo-slider-current">
-                <h3 class="promo-list-item-title promo-main-title">Перфораторы</h3>
-                <p class="promo-list-item-descr">Настоящие мужские игрушки</p>
+                <div class="slider-top">
+                  <h3 class="promo-list-item-title promo-main-title">Перфораторы</h3>
+                  <p class="promo-list-item-descr">Настоящие мужские игрушки</p>
+                </div>
                 <a href="inner.html" class="btn main-btn promo-btn-catalog" aria-label="Выбрать перфоратор">Открыть каталог</a>
               </li>
               <li class="promo-slider-item promo-slider">
@@ -128,8 +130,9 @@
                 <a class="slider-control-prev" href="#" role="button"></a>
                 <a class="slider-control-next" href="#" role="button"></a>
               </div>
-              <div class="slider-toggle">
-
+              <div class="slider-toggles">
+                <button type="button" aria-label="Дрели"></button>
+                <button class="current" type="button" aria-label="Перфораторы"></button>
               </div>
             </ul>
 
@@ -150,7 +153,7 @@
     <section class="popular">
       <div class="container">
         <header class="popular-header">
-          <h2 class="section-title popular-title">Популярные товары</h2>
+          <h2 class="section-title popular-title">Популярные товары:</h2>
           <a class="btn main-btn popular-btn-items" href="#">Все популярные товары</a>
         </header>
         <ul class="popular-list">
@@ -216,7 +219,7 @@
     <section class="brands">
       <div class="container">
         <header class="brands-header">
-          <h2 class="section-title brands-title">Популярные производители</h2>
+          <h2 class="section-title brands-title">Популярные производители:</h2>
           <a class="btn main-btn brands-btn" href="#">Все производители</a>
         </header>
         <ul class="brands-list">
@@ -270,16 +273,16 @@
         <p class="services-descr">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-content">
           <ul class="services-list">
-            <li class="services-item" tabindex="1">Доставка</li>
+            <li class="services-item current" tabindex="1">Доставка</li>
             <li class="services-item" tabindex="1">Гарантия</li>
             <li class="services-item" tabindex="1">Кредит</li>
           </ul>
           <ul class="services-submenu">
-            <li class="services-submenu-item delivery-unit services-submenu-off">
+            <li class="services-submenu-item delivery-unit services-submenu-on">
               <h3 class="services-submenu-title delivery-unit-title">Доставка</h3>
               <p class="services-submenu-descr delivery-unit-descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </li>
-            <li class="services-submenu-item guarantee-unit services-submenu-on">
+            <li class="services-submenu-item guarantee-unit services-submenu-off">
               <h3 class="services-submenu-title guarantee-unit-title">Гарантия</h3>
               <p class="services-submenu-descr guarantee-unit-descr">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
                 товар на новый. Дом уж
