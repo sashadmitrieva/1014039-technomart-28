@@ -1029,6 +1029,7 @@ h1 {
   text-transform: uppercase;
   background-color: var(--basic-white);
   border: 1px solid var(--special-grey-border);
+  cursor: pointer;
 }
 
 /* Sorted */
@@ -2058,4 +2059,8 @@ h1 {
   margin-left: 10px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.popup-map iframe {
+  border: none;
 }
