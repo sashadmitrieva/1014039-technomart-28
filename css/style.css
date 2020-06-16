@@ -362,8 +362,9 @@ img {
 }
 
 .header-info-phone {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  margin-top: 4px;
+  padding-top: 4px;
+  padding-bottom: 6px;
   padding-left: 72px;
   font-size: 21px;
   font-weight: bold;
@@ -492,21 +493,23 @@ img {
   display: flex;
   justify-content: center;
   padding: 0;
-  padding-top: 7px;
+  padding-top: 10px;
   margin: 0;
   list-style: none;
+  line-height: 18px;
 }
 
 .header-user li:not(:last-child) {
   position: relative;
   padding-right: 30px;
+
 }
 
 .header-user li:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 11px;
-  left: 90px;
+  top: 8px;
+  left: 88px;
   border: solid 2px var(--basic-blue);
   border-radius: 50%;
 }
@@ -514,7 +517,6 @@ img {
 .header-user-order a,
 .header-user-authorization a {
   font-size: 16px;
-  line-height: 18px;
   color: var(--basic-blue);
 }
 
@@ -608,7 +610,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 21px;
 }
 
@@ -635,7 +637,7 @@ img {
   background-color: var(--special-blue);
   background-image: url("../img/icon-tool.svg");
   background-repeat: no-repeat;
-  background-position: 194px 33px;
+  background-position: 194px 34px;
 }
 
 .promo-list-item:nth-child(3) {
@@ -645,7 +647,7 @@ img {
   background-color: var(--special-lilac);
   background-image: url("../img/icon-equipment.svg");
   background-repeat: no-repeat;
-  background-position: 191px 30px;
+  background-position: 191px 31px;
 }
 
 .promo-list-item:nth-child(4) {
@@ -668,7 +670,7 @@ img {
   background-color: var(--special-greenlight);
   background-image: url(../img/icon-discount.svg);
   background-repeat: no-repeat;
-  background-position: 195px 28px;
+  background-position: 196px 27px;
 }
 
 .promo-list-item:nth-child(6) {
@@ -741,8 +743,8 @@ img {
 
 .slider-toggles {
   position: absolute;
-  left: 270px;
-  bottom: 10px;
+  left: 295px;
+  bottom: 36px;
   display: flex;
   justify-content: space-between;
   width: 30px;
@@ -1130,6 +1132,8 @@ h1 {
 .popular-btn-items {
   width: 192px;
   height: 38px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 }
 
 .popular-title,
@@ -1142,9 +1146,10 @@ h1 {
 
 .popular-name {
   margin: 0;
-  padding-top: 6px;
+  padding-top: 7px;
   font-size: 18px;
   line-height: 20px;
+  font-weight: bold;
 }
 
 .popular-list {
@@ -1203,14 +1208,14 @@ h1 {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding-left: 18px;
+  padding-left: 11px;
   padding-right: 17px;
   padding-bottom: 21px;
 }
 
 .catalog-list-item h3 {
   margin: 0;
-  margin-top: 9px;
+  padding-top: 7px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -1236,7 +1241,7 @@ h1 {
   padding-top: 10px;
   padding-right: 25px;
   padding-bottom: 10px;
-  padding-left: 35px;
+  padding-left: 32px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -1352,7 +1357,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-right: 19px;
   padding-left: 28px;
   padding-bottom: 25px;
@@ -1380,6 +1385,10 @@ h1 {
   margin-bottom: 70px;
   list-style: none;
   text-align: center;
+}
+
+.brands-item img {
+  display: block;
 }
 
 .brands-item {
@@ -1447,7 +1456,7 @@ h1 {
 
 .services-item {
   padding-top: 14px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   padding-left: 22px;
   font-size: 21px;
   line-height: 30px;
@@ -1550,7 +1559,7 @@ h1 {
 
 /* Pagination */
 .pagination {
-  margin-top: 40px;
+  margin-top: 43px;
   margin-bottom: 59px;
   display: flex;
   flex-direction: row;
@@ -1606,7 +1615,7 @@ h1 {
 /* About-perforators */
 .about-perforators {
   padding-top: 64px;
-  padding-bottom: 71px;
+  padding-bottom: 69px;
   background-color: var(--basic-background);
 }
 
@@ -1628,7 +1637,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 70px;
-  padding-bottom: 69px;
+  padding-bottom: 70px;
 }
 
 .index-columns h2 {
@@ -1658,7 +1667,7 @@ h1 {
   padding: 0;
   padding-left: 37px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   list-style: none;
 }
 
@@ -1704,8 +1713,8 @@ h1 {
 }
 
 .contacts img {
-  display: inline-block;
-  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 24px;
 }
 
 .btn-feedback {
@@ -1739,6 +1748,7 @@ h1 {
   align-items: center;
   width: 220px;
   height: 68px;
+  padding-bottom: 5px;
   background-color: var(--basic-red);
   box-shadow: inset 0 -5px 0 0 var(--special-red);
 }
@@ -2016,7 +2026,11 @@ h1 {
 .popup-map {
   width: 940px;
   height: 449px;
-  background-color: var(--basic-background);
+}
+
+iframe {
+  background-image: url("../img/popup-map.png");
+  background-size: cover;
 }
 
 /* Popup Cart */
