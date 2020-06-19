@@ -1,6 +1,9 @@
 var feedback = document.querySelector(".btn-feedback");
 var popupfeedback = document.querySelector(".popup-write-us");
 var close = document.querySelector(".popup-close-btn");
+var map = document.querySelector(".link-map");
+var popupmap = document.querySelector(".popup-map");
+var closemap = popupmap.querySelector(".popup-close-btn");
 
 var form = popupfeedback.querySelector("form");
 
@@ -55,3 +58,13 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+map.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupmap.classList.add("popup-show");
+})
+
+closemap.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupmap.classList.remove("popup-show");
+})
