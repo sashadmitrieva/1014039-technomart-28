@@ -85,6 +85,7 @@
   --success: #5fbb2d;
   --warning: #ffbf47;
   --special-red: #b52933;
+  --special-hover-red: #ca2c37;
   --error: #ba2732;
   --background-blue: #1d2739;
   --background-white: #f7f3ec;
@@ -99,6 +100,8 @@
   --special-popup-background: #f1f1f1;
   --special-btn-shadow: #367315;
   --special-dark-btn-shadow: #518534;
+  --special-darkblue-active: #1d2739;
+  --checkbox: #b5b5b5;
 }
 
 /* Global */
@@ -172,6 +175,10 @@ img {
   padding-top: 11px;
   padding-bottom: 9px;
   background-color: var(--basic-red);
+}
+
+.main-btn:hover {
+  background-color: var(--special-hover-red);
 }
 
 .main-btn:active {
@@ -502,7 +509,6 @@ img {
 .header-user li:not(:last-child) {
   position: relative;
   padding-right: 30px;
-
 }
 
 .header-user li:not(:last-child)::after {
@@ -565,8 +571,11 @@ img {
 }
 
 .header-nav-item:active {
+  background-color: var(--special-darkblue-active);
+}
+
+.header-nav-item a:active {
   opacity: 0.5;
-  background-color: var(--background-blue);
 }
 
 /* Promo */
@@ -724,20 +733,20 @@ img {
 .slider-control-prev {
   position: absolute;
   top: 120px;
-  right: 20px;
+  left: 25px;
   width: 22px;
   height: 40px;
-  background-image: url(../img/icon-right.svg);
+  background-image: url(../img/icon-left.svg);
   background-repeat: no-repeat;
 }
 
 .slider-control-next {
   position: absolute;
   top: 120px;
-  left: 25px;
+  right: 20px;
   width: 22px;
   height: 40px;
-  background-image: url(../img/icon-left.svg);
+  background-image: url(../img/icon-right.svg);
   background-repeat: no-repeat;
 }
 
@@ -840,7 +849,7 @@ h1 {
 }
 
 .range-area {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   margin-top: -4px;
   padding-bottom: 25px;
   border-bottom: 1px solid var(--special-grey-border);
@@ -958,13 +967,12 @@ h1 {
 }
 
 .filter-option {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-left: 35px;
 }
 
 .filter-option label {
   position: relative;
-  display: block;
   cursor: pointer;
   user-select: none;
   font-size: 15px;
@@ -975,27 +983,51 @@ h1 {
   content: "";
   position: absolute;
   left: -35px;
-  top: 0;
+  top: -2px;
   width: 23px;
   height: 23px;
   border: 2px solid var(--basic-greylight);
   border-radius: 3px;
 }
 
+.filter-input-checkbox+label:hover::before {
+  border-color: var(--checkbox);
+}
+
+.filter-input-checkbox:disabled+label::before {
+  border-color: var(--checkbox);
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:disabled+label,
+.filter-input-radio:disabled+label {
+  opacity: 0.4;
+}
+
 .filter-input-checkbox:checked+label::before {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: -35px;
   width: 26px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:checked:hover+label::after {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.filter-input-checkbox:checked:disabled+label::before {
+  opacity: 0.4;
 }
 
 .filter-input-radio+label::before {
@@ -1009,6 +1041,10 @@ h1 {
   border-radius: 50%;
 }
 
+.filter-input-radio:hover+label::before {
+  border-color: var(--checkbox);
+}
+
 .filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
@@ -1018,6 +1054,10 @@ h1 {
   height: 9px;
   background-color: var(--basic-greylight);
   border-radius: 50%;
+}
+
+.filter-input-radio:checked:hover+label::after {
+  background-image: url("../img/radio-on-hover.svg");
 }
 
 .filter-submit-btn {
@@ -1124,8 +1164,8 @@ h1 {
   padding-top: 25px;
   padding-right: 14px;
   padding-left: 28px;
-  padding-bottom: 30px;
-  margin-bottom: 17px;
+  padding-bottom: 26px;
+  margin-bottom: 20px;
   background-color: var(--basic-otherbackground);
 }
 
@@ -1140,13 +1180,15 @@ h1 {
 .brands-title {
   padding: 0;
   margin: 0;
-  padding-top: 4px;
+  padding-top: 5px;
   color: var(--basic-blue);
 }
 
 .popular-name {
   margin: 0;
   padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -1208,16 +1250,17 @@ h1 {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding-left: 11px;
-  padding-right: 17px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 }
 
 .catalog-list-item h3 {
   margin: 0;
-  padding-top: 7px;
   font-size: 18px;
+  font-weight: bold;
   line-height: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
 }
 
 .catalog-list a,
@@ -1227,7 +1270,7 @@ h1 {
 
 .catalog-old-price {
   margin-top: 7px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -1238,18 +1281,20 @@ h1 {
 
 .catalog-new-price {
   position: relative;
+  align-self: flex-start;
+  padding-right: 26px;
   padding-top: 10px;
-  padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 32px;
+  margin-left: 44px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .catalog-new-price::after {
@@ -1357,7 +1402,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-right: 19px;
   padding-left: 28px;
   padding-bottom: 25px;
@@ -1371,7 +1416,7 @@ h1 {
 
 .brands-title {
   padding: 0;
-  padding-top: 4px;
+  padding-top: 5px;
   margin: 0;
 }
 
@@ -1559,7 +1604,7 @@ h1 {
 
 /* Pagination */
 .pagination {
-  margin-top: 43px;
+  margin-top: 48px;
   margin-bottom: 59px;
   display: flex;
   flex-direction: row;
@@ -1575,14 +1620,14 @@ h1 {
 }
 
 .pagination-item {
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .pagination-item a,
 .next-page-btn {
   display: block;
   min-width: 38px;
-  padding: 10px 15px;
+  padding: 9px 14px;
   color: var(--basic-black);
   font-size: 13px;
   line-height: 18px;
@@ -1610,12 +1655,18 @@ h1 {
 .pagination-item-current a {
   color: var(--basic-white);
   background-color: var(--basic-red);
+  border: 1px solid var(--basic-red);
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:active {
+  border: 1px solid var(--basic-red);
 }
 
 /* About-perforators */
 .about-perforators {
   padding-top: 64px;
-  padding-bottom: 69px;
+  padding-bottom: 70px;
   background-color: var(--basic-background);
 }
 
@@ -1755,7 +1806,7 @@ h1 {
 
 .footer-logo:active {
   background-color: var(--error);
-  box-shadow: 0 5px 0 0 var(--shadow-red);
+  box-shadow: inset 0 -5px 0 0 var(--shadow-red);
 }
 
 .footer-info,
