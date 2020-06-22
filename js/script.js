@@ -62,9 +62,9 @@ window.addEventListener("keydown", function(evt) {
 map.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupmap.classList.add("popup-show");
-})
+});
 
 closemap.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupmap.classList.remove("popup-show");
-})
+});
