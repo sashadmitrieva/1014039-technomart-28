@@ -151,6 +151,7 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
 }
 
@@ -433,6 +434,7 @@ img {
 
 .btn-login {
   display: inline-block;
+  vertical-align: middle;
   padding-top: 15px;
   padding-bottom: 12px;
   margin-bottom: 5px;
@@ -666,7 +668,7 @@ img {
   height: 266px;
   padding-left: 24px;
   padding-bottom: 27px;
-  background-color: var(--basic-blue);
+  background-color: var(--checkbox);
   background-image: url(../img/promo-perforators.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -974,6 +976,8 @@ h1 {
 .filter-option label {
   position: relative;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   font-size: 15px;
   line-height: 19px;
@@ -1740,6 +1744,7 @@ h1 {
 
 .btn-more {
   display: inline-block;
+  vertical-align: middle;
   padding-top: 11px;
   padding-bottom: 9px;
   padding-left: 40px;
@@ -1843,6 +1848,7 @@ h1 {
 
 .footer-nav-item a {
   display: inline-block;
+  vertical-align: middle;
   color: var(--special-white);
 }
 
@@ -1906,6 +1912,7 @@ h1 {
 
 .social-btn {
   display: inline-block;
+  vertical-align: middle;
   width: 40px;
   height: 40px;
   background-color: var(--color-social-btn);
@@ -1995,8 +2002,8 @@ h1 {
 
 .popup-close-btn {
   position: absolute;
-  top: 13px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
   z-index: 3;
   padding: 0;
   border: 0;
@@ -2075,7 +2082,7 @@ h1 {
 
 /* Popup Map */
 .popup-map {
-  width: 940px;
+  width: 943px;
   height: 449px;
 }
 
@@ -2132,14 +2139,34 @@ iframe {
 
 .popup-show {
   display: block;
+  -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 
 .popup-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
 /* Animations */
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2155,6 +2182,29 @@ iframe {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
