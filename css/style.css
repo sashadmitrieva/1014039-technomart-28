@@ -102,6 +102,9 @@
   --special-dark-btn-shadow: #518534;
   --special-darkblue-active: #1d2739;
   --checkbox: #b5b5b5;
+  --background-btn: rgba(255, 255, 255, 0.3);
+  --hover-btn: rgba(197, 197, 197, 0.3);
+  --active-btn: rgba(169, 169, 169, 0.3);
 }
 
 /* Global */
@@ -717,7 +720,7 @@ img {
   width: 135px;
   height: 38px;
   padding-top: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--background-btn);
 }
 
 .promo-slider {
@@ -725,11 +728,11 @@ img {
 }
 
 .promo-list-item-btn:hover {
-  background-color: rgba(197, 197, 197, 0.3);
+  background-color: var(--hover-btn);
 }
 
 .promo-list-item-btn:active {
-  background-color: rgba(169, 169, 169, 0.3);
+  background-color: var(--active-btn);
 }
 
 .slider-control-prev {
@@ -813,13 +816,17 @@ img {
 }
 
 /* Inner H1 */
-h1 {
+.section-title-inner {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
   padding-top: 29px;
   padding-bottom: 30px;
   padding-left: 29px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
   color: var(--basic-blue);
   background-color: var(--special-background);
 }
